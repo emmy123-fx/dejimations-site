@@ -188,3 +188,179 @@
   display: block;
   border-radius: 0.375rem;
 }
+
+/* About Section */
+.aboutSection {
+  margin: 5rem 0;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(255, 107, 107, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.aboutSection h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 1.5rem 0;
+}
+
+.aboutSection p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  max-width: 65ch;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* Courses Section */
+.coursesSection {
+  margin: 5rem 0;
+}
+
+.coursesSection h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 2rem 0;
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.courseCard {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(20, 20, 40, 0.8));
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  transition: all 0.3s;
+}
+
+.courseCard:hover {
+  border-color: rgba(124, 58, 237, 0.6);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+  transform: translateY(-4px);
+}
+
+.courseCard h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.75rem 0;
+}
+
+.coursePrice {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #7c3aed;
+  margin: 1rem 0;
+}
+
+.courseDesc {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.courseBtn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: #7c3aed;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.courseBtn:hover {
+  background: #6d28d9;
+  transform: translateY(-2px);
+}
+
+/* Merch Section */
+.merchSection {
+  margin: 5rem 0;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 165, 0, 0.05));
+  border: 2px dashed rgba(255, 107, 107, 0.3);
+  text-align: center;
+}
+
+.merchSection h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 1rem 0;
+}
+
+.comingSoon {
+  color: #ff6b6b;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.merchSection p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+}
+
+/* Social Links Section */
+.socialSection {
+  margin: 5rem 0 2rem 0;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.socialSection h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 2rem 0;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.socialLink:hover {
+  background: #7c3aed;
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(124, 58, 237, 0.3);
+}
+
+.socialLink svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+

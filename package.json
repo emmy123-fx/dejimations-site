@@ -9,9 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@prisma/client": "^7.2.0",
+    "@supabase/supabase-js": "^2.89.0",
     "autoprefixer": "^10.4.23",
     "axios": "^1.13.2",
+    "bcryptjs": "^3.0.3",
     "framer-motion": "^12.23.26",
+    "jsonwebtoken": "^9.0.3",
     "next": "16.1.1",
     "postcss": "^8.5.6",
     "react": "19.2.3",

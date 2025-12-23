@@ -26,7 +26,8 @@ export default function AdminLogin() {
       const data = await res.json();
 
       if (res.ok) {
-        localStorage.setItem('adminToken', data.token);
+        // Set cookie with token (middleware checks for cookies)
+        document.cookie = `adminToken=${data.token}; path=/; max-age=604800; SameSite=Strict`;
         router.push('/admin');
       } else {
         setError(data.error || 'Login failed');

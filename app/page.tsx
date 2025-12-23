@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../components/Reveal";
+import NewsletterSignup from "../components/NewsletterSignup";
 import styles from "./styles.module.css";
 
 export default function Home() {
@@ -304,6 +305,16 @@ export default function Home() {
               </a>
             </div>
           </Reveal>
+        </section>
+
+        <section style={{ margin: "5rem 0 0 0", paddingTop: "3rem", borderTop: "1px solid rgba(255, 255, 255, 0.1)" }}>
+          <Reveal>
+            <h3 style={{ fontSize: "1.25rem", fontWeight: "600", color: "#fff", marginBottom: "1.5rem", textAlign: "center" }}>Stay Updated</h3>
+          </Reveal>
+          <Reveal delay={0.06}>
+            <p style={{ color: "#cbd5e1", textAlign: "center", marginBottom: "1.5rem" }}>Get exclusive animation tips and course updates delivered to your inbox</p>
+          </Reveal>
+          <NewsletterSignup />
         </section>
       </main>
     </div>

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from '../../styles.module.css';
+import styles from '../styles.module.css';
 
 interface Product {
   id: number;
@@ -43,7 +43,14 @@ export default function AdminDashboard() {
   });
 
   useEffect(() => {
-    const savedToken = localStorage.getItem('adminToken');
+    // Get token from cookies (set by middleware/login)
+    const cookies = document.cookie.split('; ').reduce((acc, cookie) => {
+      const [key, value] = cookie.split('=');
+      acc[key] = value;
+      return acc;
+    }, {} as Record<string, string>);
+    
+    const savedToken = cookies.adminToken;
     if (!savedToken) {
       router.push('/admin/login');
       return;
@@ -153,7 +160,8 @@ export default function AdminDashboard() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('adminToken');
+    // Clear the adminToken cookie
+    document.cookie = 'adminToken=; path=/; max-age=0';
     router.push('/admin/login');
   };
 
